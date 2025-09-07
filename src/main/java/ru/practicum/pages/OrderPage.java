@@ -61,7 +61,7 @@ public class OrderPage {
 
 
         driver.findElement(dateInput).sendKeys(date);
-        driver.findElement(body).click();
+        //убрал строку driver.findElement(body).click(); для того что бы воспроизводился баг в хроме
         driver.findElement(rentalPeriodInput).click();
 
         WebElement periodOption = driver.findElement(By.xpath(".//div[text()='" + rentalPeriod.getDisplayText() + "']"));
